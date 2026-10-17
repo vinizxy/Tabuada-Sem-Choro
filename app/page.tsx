@@ -8,7 +8,9 @@ import { Metodo } from "@/components/sections/Metodo";
 import { Previa } from "@/components/sections/Previa";
 import { Recebe } from "@/components/sections/Recebe";
 import { ComoFunciona } from "@/components/sections/ComoFunciona";
+import { ParaQuem } from "@/components/sections/ParaQuem";
 import { Oferta } from "@/components/sections/Oferta";
+import { Escolhas } from "@/components/sections/Escolhas";
 import { Garantia } from "@/components/sections/Garantia";
 import { Faq } from "@/components/sections/Faq";
 import { CtaFinal } from "@/components/sections/CtaFinal";
@@ -48,7 +50,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
       />
-      <header className="sticky top-0 z-20 border-b-2 border-tinta bg-tinta py-2 text-center font-display text-[0.95rem] font-medium text-papel">
+      <header className="sticky top-0 z-20 border-b-2 border-tinta bg-tinta py-2 text-center font-display text-base font-medium text-papel">
         {topo}
       </header>
       <main>
@@ -59,8 +61,10 @@ export default function Home() {
         <Previa />
         <Recebe />
         <ComoFunciona />
+        <ParaQuem />
         <Oferta />
         <Garantia />
+        <Escolhas />
         <Faq />
         <CtaFinal />
       </main>

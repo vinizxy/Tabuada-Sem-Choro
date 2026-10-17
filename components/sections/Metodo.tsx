@@ -1,6 +1,6 @@
 import { metodo } from "@/content/copy";
 
-const cores = ["bg-amarelo", "bg-verde", "bg-coral", "bg-azul-claro"];
+const cores = ["bg-amarelo", "bg-verde", "bg-coral", "bg-azul"];
 const giros = ["-rotate-6", "rotate-3", "-rotate-3", "rotate-6"];
 
 export function Metodo() {
@@ -21,7 +21,7 @@ export function Metodo() {
               </span>
               <h3 className="titulo-md">
                 <span className="sr-only">Semana {s.n} · </span>
-                <span aria-hidden="true" className="block text-[0.95rem] font-semibold text-tinta-suave">
+                <span aria-hidden="true" className="block text-base font-semibold text-tinta-suave">
                   Semana {s.n}
                 </span>
                 {s.nome}

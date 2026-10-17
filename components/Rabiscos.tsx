@@ -69,6 +69,41 @@ export function Xis({ className }: P) {
   );
 }
 
+// Ícones da faixa de garantias, no mesmo traço dos rabiscos.
+const icone = { fill: "none", stroke: "currentColor", strokeWidth: 2.6, strokeLinecap: "round", strokeLinejoin: "round" } as const;
+
+export function IconeBaixar({ className }: P) {
+  return (
+    <svg viewBox="0 0 32 32" aria-hidden="true" className={className}>
+      <path {...icone} d="M16 5v15M9.5 14l6.5 6.5 6.5-6.5M6 24.5c0 1.5 1 2.5 2.5 2.5h15c1.5 0 2.5-1 2.5-2.5" />
+    </svg>
+  );
+}
+
+export function IconeImpressora({ className }: P) {
+  return (
+    <svg viewBox="0 0 32 32" aria-hidden="true" className={className}>
+      <path {...icone} d="M9.5 11V5h13v6M9.5 22H6.5a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h19a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-3M9.5 18h13v9h-13z" />
+    </svg>
+  );
+}
+
+export function IconeRelogio({ className }: P) {
+  return (
+    <svg viewBox="0 0 32 32" aria-hidden="true" className={className}>
+      <path {...icone} d="M16 4.5c6.5 0 11.5 5 11.5 11.5S22.5 27.5 16 27.5 4.5 22.5 4.5 16 9.5 4.5 16 4.5zM16 9.5V16l4.5 3" />
+    </svg>
+  );
+}
+
+export function IconeEscudo({ className }: P) {
+  return (
+    <svg viewBox="0 0 32 32" aria-hidden="true" className={className}>
+      <path {...icone} d="M16 4l10 4v7c0 6.5-4.5 11-10 13-5.5-2-10-6.5-10-13V8zM11.5 16l3 3 6-6.5" />
+    </svg>
+  );
+}
+
 export function Estrela({ className }: P) {
   return (
     <svg viewBox="0 0 40 40" aria-hidden="true" className={className}>

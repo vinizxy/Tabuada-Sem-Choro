@@ -57,9 +57,15 @@ export function BarraFixa() {
       data-visivel={visivel}
       inert={!visivel}
     >
-      <a href={CHECKOUT_URL} data-compra className="botao-compra w-full py-3">
-        {barraFixa.botao}
-      </a>
+      <div className="flex items-center gap-3">
+        <p className="shrink-0 leading-none" aria-label={`Preço: ${produto.preco}, pagamento único`}>
+          <span className="block font-display text-[1.4rem] font-bold">{produto.preco.replace(" ", " ")}</span>
+          <span className="mt-0.5 block text-base text-tinta-suave">pagamento único</span>
+        </p>
+        <a href={CHECKOUT_URL} data-compra className="botao-compra min-w-0 flex-1 px-4 py-3 text-[1.05rem]">
+          {barraFixa.botao}
+        </a>
+      </div>
     </div>
   );
 }

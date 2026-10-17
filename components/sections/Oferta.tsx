@@ -1,5 +1,6 @@
 import { oferta } from "@/content/copy";
 import { BotaoCompra } from "../BotaoCompra";
+import { Micro } from "../Micro";
 import { Sublinhado, Visto } from "../Rabiscos";
 
 export function Oferta() {
@@ -14,7 +15,10 @@ export function Oferta() {
             {oferta.preco}
             <Sublinhado className="absolute -bottom-3 left-0 h-4 w-full text-verde" />
           </p>
-          <p className="mt-6 text-[1.2rem] font-bold">{oferta.linha}</p>
+          <p className="mt-6 text-[1.2rem] font-bold text-balance">{oferta.linha}</p>
+          <p className="mx-auto mt-3 max-w-sm rounded-[14px] bg-amarelo-claro px-4 py-3 text-base leading-snug text-balance text-tinta">
+            {oferta.comparacao}
+          </p>
           <ul className="mx-auto mt-6 grid max-w-xs gap-2.5 text-left">
             {oferta.itens.map((item) => (
               <li key={item} className="flex items-center gap-3 text-[1.1rem]">
@@ -24,7 +28,7 @@ export function Oferta() {
             ))}
           </ul>
           <BotaoCompra className="mt-8 w-full">{oferta.botao}</BotaoCompra>
-          <p className="mt-3 text-[0.95rem] text-tinta-suave">{oferta.micro}</p>
+          <Micro texto={oferta.micro} className="mt-3" />
         </div>
       </div>
     </section>

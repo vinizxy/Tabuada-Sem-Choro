@@ -23,18 +23,16 @@ export function Dor() {
             {dor.titulo}
           </h2>
           <ul className="mt-8 space-y-4">
-            {dor.itens.map((item, i) => (
-              <li key={item} className="surge flex items-start gap-3 text-[1.2rem] font-semibold md:text-[1.35rem]">
-                {i < dor.itens.length - 1 ? (
-                  <Xis className="mt-1 h-7 w-7 shrink-0 text-coral" />
-                ) : (
-                  <span aria-hidden="true" className="mt-1 h-7 w-7 shrink-0 text-center font-display text-2xl leading-7">
-                    …
-                  </span>
-                )}
+            {dor.itens.slice(0, -1).map((item) => (
+              <li key={item} className="surge flex items-start gap-3 text-[1.2rem] font-semibold md:text-[1.5rem]">
+                <Xis className="mt-1 h-7 w-7 shrink-0 text-coral" />
                 <span>{item}</span>
               </li>
             ))}
+            {/* Última linha: fecha a dor, com marca-texto em vez de ícone */}
+            <li className="surge pt-3 text-[1.3rem] leading-relaxed font-bold text-balance md:text-[1.6rem]">
+              <span className="bg-amarelo px-2 py-0.5 box-decoration-clone">{dor.itens[dor.itens.length - 1]}</span>
+            </li>
           </ul>
         </div>
       </div>

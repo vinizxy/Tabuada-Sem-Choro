@@ -1,7 +1,11 @@
 import Image from "next/image";
-import { hero } from "@/content/copy";
+import { garantias, hero } from "@/content/copy";
 import { BotaoCompra } from "../BotaoCompra";
-import { Estrela, Sublinhado } from "../Rabiscos";
+import { Micro } from "../Micro";
+import { Estrela, IconeBaixar, IconeEscudo, IconeImpressora, IconeRelogio, Sublinhado } from "../Rabiscos";
+
+const icones = [IconeBaixar, IconeImpressora, IconeRelogio, IconeEscudo];
+const cores = ["bg-amarelo", "bg-azul-claro", "bg-coral-claro", "bg-verde-claro"];
 
 export function Hero() {
   return (
@@ -21,7 +25,7 @@ export function Hero() {
           <p className="mt-6 max-w-[32ch] text-[1.2rem] text-tinta-suave md:text-[1.3rem]">{hero.sub}</p>
           <div className="mt-7">
             <BotaoCompra className="w-full sm:w-auto">{hero.botao}</BotaoCompra>
-            <p className="mt-3 text-[0.95rem] text-tinta-suave">{hero.micro}</p>
+            <Micro texto={hero.micro} className="mt-3" />
           </div>
         </div>
 
@@ -44,6 +48,24 @@ export function Hero() {
           </span>
         </div>
       </div>
+
+      {/* Linhas da grade = fundo tinta aparecendo pelo gap de 2px */}
+      <ul aria-label="Garantias" className="grid grid-cols-2 gap-[2px] border-t-2 border-tinta bg-tinta md:grid-cols-4">
+        {garantias.map((g, i) => {
+          const Icone = icones[i];
+          return (
+            <li
+              key={g}
+              className="flex items-center gap-2.5 bg-[#fffdf8] px-3.5 py-4 font-display text-[1.05rem] leading-tight font-semibold md:justify-center"
+            >
+              <span className={`grid h-10 w-10 shrink-0 place-items-center rounded-full border-2 border-tinta ${cores[i]}`}>
+                <Icone className="h-6 w-6" />
+              </span>
+              {g}
+            </li>
+          );
+        })}
+      </ul>
     </section>
   );
 }

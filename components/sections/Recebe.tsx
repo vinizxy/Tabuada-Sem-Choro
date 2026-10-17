@@ -12,11 +12,14 @@ export function Recebe() {
         </h2>
         <ul className="mt-10 grid gap-4 sm:grid-cols-2">
           {recebe.itens.map((item) => (
-            <li key={item} className="surge flex items-center gap-4 rounded-[20px] border-2 border-tinta bg-[#fffdf8] p-4 text-[1.2rem] font-bold">
+            <li key={item.titulo} className="surge flex items-start gap-4 rounded-[20px] border-2 border-tinta bg-[#fffdf8] p-4 md:p-5">
               <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full border-2 border-tinta bg-verde">
                 <Visto className="h-6 w-6 text-tinta" />
               </span>
-              {item}
+              <div>
+                <h3 className="text-[1.2rem] leading-snug font-bold">{item.titulo}</h3>
+                <p className="mt-1 text-tinta-suave">{item.texto}</p>
+              </div>
             </li>
           ))}
         </ul>

@@ -56,12 +56,14 @@ body {
   background-size: 28px 28px;
 }
 
+/* text-wrap: balance evita palavra sozinha na última linha dos títulos. */
 .titulo-xl {
   font-family: var(--font-fredoka);
   font-weight: 700;
   font-size: clamp(2.6rem, 9vw, 4.75rem);
   line-height: 1.02;
   letter-spacing: -0.02em;
+  text-wrap: balance;
 }
 
 .titulo-lg {
@@ -70,6 +72,7 @@ body {
   font-size: clamp(2rem, 6.5vw, 3.25rem);
   line-height: 1.08;
   letter-spacing: -0.015em;
+  text-wrap: balance;
 }
 
 .titulo-md {
@@ -77,6 +80,7 @@ body {
   font-weight: 600;
   font-size: clamp(1.4rem, 4vw, 1.75rem);
   line-height: 1.2;
+  text-wrap: balance;
 }
 
 /* Sombra sólida, sem blur. Cards: raio 20px. Botões: pílula. */
@@ -108,6 +112,14 @@ body {
   transition:
     transform 0.15s ease,
     box-shadow 0.15s ease;
+}
+/* Desktop: CTA com mais presença */
+@media (min-width: 768px) {
+  .botao-compra {
+    min-height: 64px;
+    padding: 1rem 2.25rem;
+    font-size: 1.35rem;
+  }
 }
 .botao-compra:hover {
   transform: translate(-1px, -1px);
@@ -176,13 +188,13 @@ details[open] .faq-sinal {
   }
 }
 
+/* Só desliza, não mexe na opacidade: o texto nunca fica apagado (sem "buraco em branco"
+   numa rolagem rápida e sem falso alerta de contraste nos verificadores de acessibilidade). */
 @keyframes surgir {
   from {
-    opacity: 0;
-    transform: translateY(24px);
+    transform: translateY(20px);
   }
   to {
-    opacity: 1;
     transform: none;
   }
 }

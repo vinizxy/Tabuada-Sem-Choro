@@ -25,6 +25,8 @@ export const seo = {
 
 export const topo = "PDF para imprimir · Acesso imediato";
 
+export const garantias = ["Acesso imediato", "Pronto para imprimir", "10 minutos por dia", "Garantia de 7 dias"];
+
 export const hero = {
   selo: "Para crianças de 7 a 10 anos",
   titulo: "Tabuada sem choro.",
@@ -66,20 +68,20 @@ export const previa = {
   titulo: "Veja por dentro.",
   legenda: "Folhas prontas para imprimir em A4.",
   paginas: [
-    { src: "/img/mockup-pdf-1.webp", alt: "Página do plano semanal da Tabuada Sem Choro" },
-    { src: "/img/mockup-pdf-2.webp", alt: "Ficha diária de 10 minutos com exercícios de multiplicação" },
-    { src: "/img/mockup-pdf-3.webp", alt: "Jogo de tabuleiro da tabuada para recortar e jogar" },
-    { src: "/img/mockup-pdf-4.webp", alt: "Folha de desafio semanal com espaço para respostas" },
+    { src: "/img/mockup-pdf-1.webp", alt: "Capa do ebook Tabuada Sem Choro com o mascote Vezinho" },
+    { src: "/img/mockup-pdf-2.webp", alt: "Ficha diária de 10 minutos: grupos iguais, aquecimento e mão na massa" },
+    { src: "/img/mockup-pdf-3.webp", alt: "Página da tabuada do 9 com o truque dos dedos" },
+    { src: "/img/mockup-pdf-4.webp", alt: "Tabela mágica com toda a tabuada em uma folha" },
   ],
 };
 
 export const recebe = {
   titulo: "Tudo pronto. É só imprimir.",
   itens: [
-    "Plano de 4 semanas",
-    "Fichas diárias de 10 minutos",
-    "Jogos para imprimir e brincar",
-    "Desafios semanais",
+    { titulo: "Plano de 4 semanas", texto: "O que fazer em cada dia, na ordem certa. Sem inventar atividade." },
+    { titulo: "Fichas diárias de 10 minutos", texto: "Exercícios curtos, uma tabuada de cada vez." },
+    { titulo: "Jogos para imprimir e brincar", texto: "Para recortar e jogar junto. A criança treina brincando." },
+    { titulo: "Desafios semanais", texto: "Um mini-desafio no fim de cada semana para ver a evolução." },
   ],
   bonus: "BÔNUS: Medalhas e certificado Mestre da Tabuada",
   bonusAlt: "Medalhas de papel e certificado Mestre da Tabuada impressos",
@@ -92,17 +94,55 @@ export const comoFunciona = {
   imagemAlt: "Mãos de um adulto e de uma criança jogando um jogo de tabuada impresso",
 };
 
+export const paraQuem = {
+  titulo: "Para quem é este plano?",
+  sim: {
+    titulo: "É para você se…",
+    itens: [
+      "Seu filho estuda a tabuada e esquece no dia seguinte.",
+      "Você quer uma rotina curta e pronta para seguir.",
+      "Você quer trocar a cobrança por brincadeira.",
+      "Você quer menos briga e mais confiança na hora de estudar.",
+    ],
+  },
+  nao: {
+    titulo: "Não é para você se…",
+    itens: [
+      "Você procura resultado mágico sem aplicar o material.",
+      "Você não consegue separar 10 minutos por dia.",
+      "Você prefere continuar só na repetição.",
+    ],
+  },
+};
+
 export const oferta = {
   preco: "R$ 19,90",
   linha: "Pagamento único. Menos que um lanche.",
+  comparacao:
+    "Uma única aula de reforço costuma custar mais que o material inteiro. E o plano fica com você para repetir quantas vezes precisar.",
   itens: ["Plano de 4 semanas", "Jogos", "Desafios", "Bônus medalhas e certificado"],
-  botao: "Quero a Tabuada Sem Choro agora",
+  botao: "Quero a Tabuada Sem Choro agora",
   micro: "Acesso imediato por e-mail · Pix ou cartão",
 };
 
 export const garantia = {
   linha1: "7 dias para testar.",
   linha2: "Não gostou? Devolvemos seu dinheiro.",
+};
+
+export const escolhas = {
+  titulo: "Agora você tem duas escolhas.",
+  um: {
+    rotulo: "Escolha 1",
+    titulo: "Continuar como está",
+    texto: "Mais repetição, mais cobrança e o 7 × 8 travando de novo.",
+  },
+  dois: {
+    rotulo: "Escolha 2",
+    titulo: "Começar com 10 minutos por dia",
+    texto: "Um plano pronto para a criança entender, praticar e ganhar confiança.",
+  },
+  botao: "Quero começar agora",
 };
 
 export const faq = {
@@ -133,7 +173,7 @@ export const ctaFinal = {
 };
 
 export const barraFixa = {
-  botao: "Quero a Tabuada Sem Choro",
+  botao: "Quero comprar agora",
 };
 
 export const rodape = {
