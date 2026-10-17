@@ -100,7 +100,7 @@ export function AvisoCookies() {
     >
       <p className="flex-1">
         {cookies.texto}{" "}
-        <Link href="/privacidade" className="font-bold underline underline-offset-2">
+        <Link href="/privacidade" className="inline-block py-2 font-bold underline underline-offset-2">
           {cookies.link}
         </Link>
       </p>

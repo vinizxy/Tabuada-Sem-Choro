@@ -4,7 +4,7 @@ import { Xis } from "../Rabiscos";
 export function Dor() {
   return (
     <section aria-labelledby="titulo-dor" className="bg-amarelo-claro/45">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 md:grid-cols-2 md:gap-16 md:px-8 md:py-24">
+      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 md:grid-cols-2 md:gap-16 md:px-8 md:py-24">
         <div>
           <h2 id="titulo-dor" className="titulo-lg max-w-[16ch]">
             {dor.titulo}

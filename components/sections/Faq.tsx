@@ -3,7 +3,7 @@ import { faq } from "@/content/copy";
 export function Faq() {
   return (
     <section aria-labelledby="titulo-faq" className="papel">
-      <div className="mx-auto max-w-3xl px-4 py-16 md:py-24">
+      <div className="mx-auto max-w-3xl px-4 py-12 md:py-24">
         <h2 id="titulo-faq" className="titulo-lg">
           {faq.titulo}
         </h2>

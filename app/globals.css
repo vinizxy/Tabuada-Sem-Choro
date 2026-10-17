@@ -7,6 +7,7 @@
   --tinta-suave: #3d4763;
   --amarelo: #ffc83d;
   --coral: #ff6b57;
+  --coral-texto: #d23f2a; /* coral escuro para texto: contraste 4.5:1 sobre o papel */
   --verde: #2bb673;
   --azul: #3a86ff;
   /* tons suaves para fundos de seção (tinta sobre eles passa de 4.5:1) */
@@ -23,6 +24,7 @@
   --color-tinta-suave: var(--tinta-suave);
   --color-amarelo: var(--amarelo);
   --color-coral: var(--coral);
+  --color-coral-texto: var(--coral-texto);
   --color-verde: var(--verde);
   --color-azul: var(--azul);
   --color-amarelo-claro: var(--amarelo-claro);

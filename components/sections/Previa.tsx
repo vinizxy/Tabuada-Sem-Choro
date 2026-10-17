@@ -5,7 +5,7 @@ const giros = ["", "", "", ""];
 
 export function Previa() {
   return (
-    <section aria-labelledby="titulo-previa" className="papel py-16 md:py-24">
+    <section aria-labelledby="titulo-previa" className="papel py-12 md:py-24">
       <div className="mx-auto max-w-6xl px-4 md:px-8">
         <h2 id="titulo-previa" className="titulo-lg">
           {previa.titulo}

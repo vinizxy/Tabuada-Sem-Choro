@@ -32,7 +32,7 @@ export const hero = {
   titulo: "Tabuada sem choro.",
   rabisco: "10 minutos por dia, sem decoreba.",
   sub: "Plano de 4 semanas com fichas e jogos. Seu filho aprende a tabuada entendendo de onde ela vem.",
-  botao: "Quero a Tabuada Sem Choro — R$ 19,90",
+  botao: "Quero começar — R$ 19,90",
   micro: "Pagamento único · Acesso imediato · Garantia de 7 dias",
   imagemAlt: "Criança sorrindo sentada à mesa com uma folha de tabuada impressa",
 };
@@ -152,7 +152,7 @@ export const faq = {
 
 export const ctaFinal = {
   titulo: "Chega de choro na tabuada.",
-  botao: "Quero a Tabuada Sem Choro — R$ 19,90",
+  botao: "Quero começar — R$ 19,90",
 };
 
 export const barraFixa = {

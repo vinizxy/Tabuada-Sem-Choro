@@ -5,7 +5,7 @@ import { BotaoCompra } from "../BotaoCompra";
 export function Recebe() {
   return (
     <section aria-labelledby="titulo-recebe" className="bg-amarelo-claro/45">
-      <div className="mx-auto max-w-4xl px-4 py-16 md:py-24">
+      <div className="mx-auto max-w-4xl px-4 py-12 md:py-24">
         <h2 id="titulo-recebe" className="titulo-lg">
           {recebe.titulo}
         </h2>

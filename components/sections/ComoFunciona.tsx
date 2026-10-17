@@ -6,7 +6,7 @@ const cores = ["bg-amarelo", "bg-amarelo", "bg-amarelo"];
 export function ComoFunciona() {
   return (
     <section aria-labelledby="titulo-como" className="papel">
-      <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 md:grid-cols-2 md:gap-16 md:px-8 md:py-24">
+      <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-12 md:grid-cols-2 md:gap-16 md:px-8 md:py-24">
         <div>
           <h2 id="titulo-como" className="titulo-lg">
             {comoFunciona.titulo}

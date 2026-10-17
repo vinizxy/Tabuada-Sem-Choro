@@ -50,7 +50,7 @@ export function Hero() {
 
       <ul
         aria-label="Garantias"
-        className="flex flex-wrap justify-center gap-x-8 gap-y-2 border-t-2 border-tinta bg-[#fffdf8] px-4 py-4 font-display text-[1.05rem] font-semibold"
+        className="grid grid-cols-2 gap-x-4 gap-y-2 border-t-2 border-tinta bg-[#fffdf8] px-5 py-4 font-display text-base font-semibold sm:flex sm:flex-wrap sm:justify-center sm:gap-x-8"
       >
         {garantias.map((g) => (
           <li key={g} className="flex items-center gap-2">

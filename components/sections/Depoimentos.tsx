@@ -5,7 +5,7 @@ export function Depoimentos() {
   if (depoimentos.length === 0) return null;
   return (
     <section aria-labelledby="titulo-depo" className="papel">
-      <div className="mx-auto max-w-5xl px-4 py-16 md:py-24">
+      <div className="mx-auto max-w-5xl px-4 py-12 md:py-24">
         <h2 id="titulo-depo" className="titulo-lg">
           O que os pais contam
         </h2>
