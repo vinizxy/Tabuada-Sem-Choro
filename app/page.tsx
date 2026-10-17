@@ -24,7 +24,7 @@ const jsonLd = [
     image: `${SITE_URL}/img/og-image.jpg`,
     offers: {
       "@type": "Offer",
-      price: "10.90",
+      price: produto.precoNumero.toFixed(2),
       priceCurrency: produto.moeda,
       availability: "https://schema.org/InStock",
       url: CHECKOUT_URL.startsWith("http") ? CHECKOUT_URL : SITE_URL,

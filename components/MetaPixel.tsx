@@ -1,4 +1,5 @@
 import Script from "next/script";
+import { produto } from "@/content/copy";
 
 const PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
 
@@ -15,7 +16,7 @@ n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
 document,'script','https://connect.facebook.net/en_US/fbevents.js');
 fbq('init','${PIXEL_ID}');fbq('track','PageView');
-fbq('track','ViewContent',{content_name:'Tabuada Sem Choro',value:10.9,currency:'BRL'});`}
+fbq('track','ViewContent',{content_name:'${produto.nome}',value:${produto.precoNumero},currency:'${produto.moeda}'});`}
       </Script>
       <noscript>
         {/* eslint-disable-next-line @next/next/no-img-element */}

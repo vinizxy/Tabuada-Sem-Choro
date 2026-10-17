@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { barraFixa, cookies } from "@/content/copy";
+import { barraFixa, cookies, produto } from "@/content/copy";
 import { CHECKOUT_URL } from "./BotaoCompra";
 
 declare global {
@@ -27,7 +27,7 @@ export function RastreioCompra() {
         });
         a.href = url.toString();
       }
-      window.fbq?.("track", "InitiateCheckout", { value: 10.9, currency: "BRL", content_name: "Tabuada Sem Choro" });
+      window.fbq?.("track", "InitiateCheckout", { value: produto.precoNumero, currency: produto.moeda, content_name: produto.nome });
     };
     document.addEventListener("click", onClick);
     return () => document.removeEventListener("click", onClick);

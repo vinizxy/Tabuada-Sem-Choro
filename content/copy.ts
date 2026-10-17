@@ -10,8 +10,8 @@ export const empresa = {
 
 export const produto = {
   nome: "Tabuada Sem Choro",
-  preco: "R$ 10,90",
-  precoNumero: 10.9,
+  preco: "R$ 19,90",
+  precoNumero: 19.9,
   moeda: "BRL",
   descricao:
     "Ebook em PDF para imprimir com plano de 4 semanas (10 minutos por dia) e jogos para crianças de 7 a 10 anos aprenderem a tabuada entendendo, e não só decorando.",
@@ -20,7 +20,7 @@ export const produto = {
 export const seo = {
   titulo: "Tabuada Sem Choro | Plano de 4 semanas para imprimir",
   descricao:
-    "Ebook em PDF para crianças de 7 a 10 anos aprenderem a tabuada entendendo. Plano de 4 semanas, 10 minutos por dia, jogos para imprimir. R$ 10,90.",
+    "Ebook em PDF para crianças de 7 a 10 anos aprenderem a tabuada entendendo. Plano de 4 semanas, 10 minutos por dia, jogos para imprimir. R$ 19,90.",
 };
 
 export const topo = "PDF para imprimir · Acesso imediato";
@@ -30,7 +30,7 @@ export const hero = {
   titulo: "Tabuada sem choro.",
   rabisco: "Sem briga. Sem decoreba.",
   sub: "Plano de 4 semanas. 10 minutos por dia. Muitos jogos.",
-  botao: "Quero a Tabuada Sem Choro — R$ 10,90",
+  botao: "Quero a Tabuada Sem Choro — R$ 19,90",
   micro: "Pagamento único · Acesso imediato · Garantia de 7 dias",
   imagemAlt: "Criança sorrindo sentada à mesa com uma folha de tabuada impressa",
 };
@@ -93,7 +93,7 @@ export const comoFunciona = {
 };
 
 export const oferta = {
-  preco: "R$ 10,90",
+  preco: "R$ 19,90",
   linha: "Pagamento único. Menos que um lanche.",
   itens: ["Plano de 4 semanas", "Jogos", "Desafios", "Bônus medalhas e certificado"],
   botao: "Quero a Tabuada Sem Choro agora",
@@ -129,7 +129,7 @@ export const faq = {
 
 export const ctaFinal = {
   titulo: "Chega de choro na tabuada.",
-  botao: "Quero a Tabuada Sem Choro — R$ 10,90",
+  botao: "Quero a Tabuada Sem Choro — R$ 19,90",
 };
 
 export const barraFixa = {

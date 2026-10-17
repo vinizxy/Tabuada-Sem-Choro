@@ -1,6 +1,6 @@
 # Tabuada Sem Choro: página de vendas
 
-Página de vendas estática (Next.js 16 App Router + TypeScript + Tailwind CSS v4) para o ebook **Tabuada Sem Choro** (R$ 10,90).
+Página de vendas estática (Next.js 16 App Router + TypeScript + Tailwind CSS v4) para o ebook **Tabuada Sem Choro** (R$ 19,90).
 Todas as rotas são geradas no build (SSG). Não há backend.
 
 ## Como rodar
@@ -69,7 +69,7 @@ Eventos disparados pela página:
 | Evento | Quando |
 | --- | --- |
 | `PageView` | Ao carregar (depois da hidratação, `afterInteractive`) |
-| `ViewContent` | Ao carregar, com `value: 10.9`, `currency: BRL` |
+| `ViewContent` | Ao carregar, com `value: 19.9`, `currency: BRL` |
 | `InitiateCheckout` | Ao clicar em qualquer botão de compra |
 | `Purchase` | **No checkout**, não nesta página |
 
