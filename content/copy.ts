@@ -14,24 +14,24 @@ export const produto = {
   precoNumero: 19.9,
   moeda: "BRL",
   descricao:
-    "Ebook em PDF para imprimir com plano de 4 semanas (10 minutos por dia) e jogos para crianças de 7 a 10 anos aprenderem a tabuada entendendo, e não só decorando.",
+    "Ebook com plano de 4 semanas (10 minutos por dia) e jogos para crianças de 7 a 10 anos aprenderem a tabuada entendendo, e não só decorando.",
 };
 
 export const seo = {
-  titulo: "Tabuada Sem Choro | Plano de 4 semanas para imprimir",
+  titulo: "Tabuada Sem Choro | Plano de 4 semanas em 10 minutos por dia",
   descricao:
-    "Ebook em PDF para crianças de 7 a 10 anos aprenderem a tabuada entendendo. Plano de 4 semanas, 10 minutos por dia, jogos para imprimir. R$ 19,90.",
+    "Ebook para crianças de 7 a 10 anos aprenderem a tabuada entendendo. Plano de 4 semanas, 10 minutos por dia, com jogos. R$ 19,90.",
 };
 
-export const topo = "PDF para imprimir · Acesso imediato";
+export const topo = "Acesso imediato";
 
-export const garantias = ["Acesso imediato", "Pronto para imprimir", "10 minutos por dia", "Garantia de 7 dias"];
+export const garantias = ["Acesso imediato", "10 minutos por dia", "Garantia de 7 dias"];
 
 export const hero = {
   selo: "Para crianças de 7 a 10 anos",
   titulo: "Tabuada sem choro.",
   rabisco: "10 minutos por dia, sem decoreba.",
-  sub: "Plano de 4 semanas em PDF, com fichas e jogos para imprimir. Seu filho aprende a tabuada entendendo de onde ela vem.",
+  sub: "Plano de 4 semanas com fichas e jogos. Seu filho aprende a tabuada entendendo de onde ela vem.",
   botao: "Quero a Tabuada Sem Choro — R$ 19,90",
   micro: "Pagamento único · Acesso imediato · Garantia de 7 dias",
   imagemAlt: "Criança sorrindo sentada à mesa com uma folha de tabuada impressa",
@@ -65,7 +65,7 @@ export const metodo = {
 
 export const previa = {
   titulo: "Veja por dentro.",
-  legenda: "Folhas prontas para imprimir em A4.",
+  legenda: "Veja algumas páginas do material.",
   paginas: [
     { src: "/img/mockup-pdf-1.webp", alt: "Capa do ebook Tabuada Sem Choro com o mascote Vezinho" },
     { src: "/img/mockup-pdf-2.webp", alt: "Ficha diária de 10 minutos: grupos iguais, aquecimento e mão na massa" },
@@ -75,21 +75,21 @@ export const previa = {
 };
 
 export const recebe = {
-  titulo: "Tudo pronto. É só imprimir.",
+  titulo: "Tudo pronto. É só começar.",
   itens: [
     { titulo: "Plano de 4 semanas", texto: "O que fazer em cada dia, na ordem certa. Sem inventar atividade." },
     { titulo: "Fichas diárias de 10 minutos", texto: "Exercícios curtos, uma tabuada de cada vez." },
-    { titulo: "Jogos para imprimir e brincar", texto: "Para recortar e jogar junto. A criança treina brincando." },
+    { titulo: "Jogos para brincar", texto: "Para jogar junto. A criança treina brincando." },
     { titulo: "Desafios semanais", texto: "Um mini-desafio no fim de cada semana para ver a evolução." },
   ],
   bonus: "BÔNUS: Medalhas e certificado Mestre da Tabuada",
-  bonusAlt: "Medalhas de papel e certificado Mestre da Tabuada impressos",
+  bonusAlt: "Medalhas e certificado Mestre da Tabuada",
   botao: "Quero começar hoje",
 };
 
 export const comoFunciona = {
   titulo: "Como funciona",
-  passos: ["Imprima.", "Separe 10 minutos.", "Brinquem."],
+  passos: ["Receba por e-mail.", "Separe 10 minutos.", "Brinquem."],
   imagemAlt: "Mãos de um adulto e de uma criança jogando um jogo de tabuada impresso",
 };
 
@@ -138,10 +138,6 @@ export const faq = {
     {
       p: "Para qual idade?",
       r: "Foi pensado para crianças de 7 a 10 anos que já conhecem os números e estão aprendendo ou revisando a multiplicação.",
-    },
-    {
-      p: "Preciso imprimir?",
-      r: "Sim, o material é feito para imprimir em folhas A4. Dá para usar também na tela, mas os jogos funcionam melhor no papel.",
     },
     { p: "Quanto tempo por dia?", r: "Cerca de 10 minutos." },
     {

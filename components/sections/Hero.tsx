@@ -25,7 +25,7 @@ export function Hero() {
           </div>
         </div>
 
-        {/* O produto de verdade: folhas do PDF em leque */}
+        {/* O produto de verdade: páginas do material em leque */}
         <div className="relative mx-auto aspect-[6/5] w-full max-w-[500px]">
           {[
             { p: ficha, cls: "left-0 top-[8%] -rotate-6" },

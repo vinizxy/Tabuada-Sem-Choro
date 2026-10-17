@@ -18,7 +18,7 @@ export default function Termos() {
 
       <h2>1. O produto</h2>
       <p>
-        A Tabuada Sem Choro é um material digital em PDF, para imprimir, com plano de 4 semanas, fichas diárias, jogos,
+        A Tabuada Sem Choro é um material digital com plano de 4 semanas, fichas diárias, jogos,
         desafios e bônus (medalhas e certificado). É um material educativo de apoio e não substitui o acompanhamento escolar
         ou de profissionais.
       </p>
@@ -38,7 +38,7 @@ export default function Termos() {
 
       <h2>4. Licença de uso</h2>
       <ul>
-        <li>O material é para uso pessoal, dentro da sua família. Você pode imprimir quantas cópias precisar para isso.</li>
+        <li>O material é para uso pessoal, dentro da sua família.</li>
         <li>É proibido revender, compartilhar, publicar ou distribuir o arquivo, no todo ou em parte.</li>
       </ul>
 
