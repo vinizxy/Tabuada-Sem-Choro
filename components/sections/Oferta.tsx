@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { oferta } from "@/content/copy";
 import { BotaoCompra } from "../BotaoCompra";
 import { Micro } from "../Micro";
@@ -8,6 +9,14 @@ export function Oferta() {
     <section id="oferta" data-esconde-barra aria-labelledby="titulo-oferta" className="scroll-mt-10 border-y-2 border-tinta bg-amarelo-claro">
       <div className="mx-auto max-w-xl px-4 py-16 md:py-24">
         <div className="cartao relative p-6 text-center md:p-10">
+          <Image
+            src="/img/oferta-ebook.webp"
+            alt="Capa do ebook, ficha do dia e página de medalhas do Tabuada Sem Choro"
+            width={720}
+            height={500}
+            sizes="(min-width: 640px) 440px, 90vw"
+            className="mx-auto mb-6 h-auto w-full max-w-[440px]"
+          />
           <h2 id="titulo-oferta" className="sr-only">
             Oferta
           </h2>
