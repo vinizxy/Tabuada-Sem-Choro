@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { empresa } from "@/content/copy";
+import { CONTACT_EMAIL } from "@/content/site";
 import { PaginaLegal } from "@/components/PaginaLegal";
 
 export const metadata: Metadata = {
@@ -12,15 +12,14 @@ export default function Privacidade() {
   return (
     <PaginaLegal titulo="Política de Privacidade" atualizado="16/10/2026">
       <p>
-        Esta política explica como {empresa.nome}, inscrita no CNPJ {empresa.cnpj} (&quot;nós&quot;), trata dados pessoais
+        Esta política explica como a Tabuada Sem Choro (&quot;nós&quot;) trata dados pessoais
         de quem visita este site e de quem compra a Tabuada Sem Choro, de acordo com a Lei Geral de Proteção de Dados
         (Lei 13.709/2018, &quot;LGPD&quot;).
       </p>
 
-      <h2>1. Quem é o controlador</h2>
+      <h2>1. Quem responde pelos dados</h2>
       <p>
-        O controlador dos dados é {empresa.nome}. Para qualquer assunto sobre privacidade, inclusive para falar com o
-        encarregado (DPO), escreva para <a className="underline" href={`mailto:${empresa.email}`}>{empresa.email}</a>.
+        Para qualquer assunto sobre privacidade, escreva para <a className="underline" href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
       </p>
 
       <h2>2. Quais dados coletamos</h2>
@@ -31,7 +30,7 @@ export default function Privacidade() {
         </li>
         <li>
           <strong>Dados de compra:</strong> nome, e-mail, CPF, telefone e dados de pagamento são informados diretamente na
-          plataforma de checkout (por exemplo Kiwify, Hotmart ou Eduzz). Não armazenamos dados de cartão neste site.
+          Hotmart, plataforma de pagamento. Não armazenamos dados de cartão neste site.
         </li>
         <li>
           <strong>Dados de contato:</strong> o que você nos enviar por e-mail.
@@ -49,7 +48,7 @@ export default function Privacidade() {
 
       <h2>4. Com quem compartilhamos</h2>
       <ul>
-        <li>Plataforma de checkout e pagamento, para processar a compra e enviar o acesso.</li>
+        <li>Hotmart (checkout e pagamento), para processar a compra e enviar o acesso.</li>
         <li>Meta Platforms (Facebook e Instagram), para mensurar anúncios por meio do Pixel e da API de Conversões.</li>
         <li>Provedor de hospedagem do site (Vercel).</li>
         <li>Autoridades públicas, quando houver obrigação legal.</li>
@@ -79,7 +78,7 @@ export default function Privacidade() {
         <li>revogação do consentimento, quando ele for a base legal.</li>
       </ul>
       <p>
-        Envie o pedido para <a className="underline" href={`mailto:${empresa.email}`}>{empresa.email}</a>. Você também pode
+        Envie o pedido para <a className="underline" href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Você também pode
         reclamar à Autoridade Nacional de Proteção de Dados (ANPD).
       </p>
 

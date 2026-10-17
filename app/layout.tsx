@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Fredoka, Nunito } from "next/font/google";
-import { SITE_URL, seo } from "@/content/copy";
+import { seo } from "@/content/copy";
+import { SITE_URL } from "@/content/site";
 import { MetaPixel } from "@/components/MetaPixel";
 import { AvisoCookies } from "@/components/Cliente";
 import "./globals.css";

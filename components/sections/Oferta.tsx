@@ -38,6 +38,7 @@ export function Oferta() {
           </ul>
           <BotaoCompra className="mt-8 w-full">{oferta.botao}</BotaoCompra>
           <Micro texto={oferta.micro} className="mt-3" />
+          <p className="mt-3 text-base text-tinta-suave">{oferta.extras}</p>
         </div>
       </div>
     </section>

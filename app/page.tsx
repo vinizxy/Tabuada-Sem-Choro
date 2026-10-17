@@ -1,4 +1,6 @@
-import { SITE_URL, faq, produto, topo } from "@/content/copy";
+import { faq, produto, topo } from "@/content/copy";
+import { CHECKOUT_URL, SITE_URL } from "@/content/site";
+import { testimonials } from "@/content/testimonials";
 import { BarraFixa, RastreioCompra } from "@/components/Cliente";
 import { Rodape } from "@/components/Rodape";
 import { Hero } from "@/components/sections/Hero";
@@ -9,13 +11,13 @@ import { Recebe } from "@/components/sections/Recebe";
 import { ComoFunciona } from "@/components/sections/ComoFunciona";
 import { ParaQuem } from "@/components/sections/ParaQuem";
 import { Oferta } from "@/components/sections/Oferta";
-import { Depoimentos } from "@/components/sections/Depoimentos";
+import { Prova } from "@/components/sections/Prova";
 import { Garantia } from "@/components/sections/Garantia";
 import { Faq } from "@/components/sections/Faq";
 import { CtaFinal } from "@/components/sections/CtaFinal";
-import { CHECKOUT_URL } from "@/components/BotaoCompra";
 
-// Sem aggregateRating enquanto não houver avaliações reais.
+// aggregateRating só entra quando houver avaliações reais em content/testimonials.ts.
+const notaMedia = testimonials.length ? testimonials.reduce((t, d) => t + d.nota, 0) / testimonials.length : 0;
 const jsonLd = [
   {
     "@context": "https://schema.org",
@@ -23,6 +25,16 @@ const jsonLd = [
     name: produto.nome,
     description: produto.descricao,
     image: `${SITE_URL}/img/og-image.jpg`,
+    ...(testimonials.length > 0 && {
+      aggregateRating: { "@type": "AggregateRating", ratingValue: notaMedia.toFixed(1), reviewCount: testimonials.length },
+      review: testimonials.map((d) => ({
+        "@type": "Review",
+        author: { "@type": "Person", name: d.nome },
+        datePublished: d.data,
+        reviewBody: d.texto,
+        reviewRating: { "@type": "Rating", ratingValue: d.nota, bestRating: 5 },
+      })),
+    }),
     offers: {
       "@type": "Offer",
       price: produto.precoNumero.toFixed(2),
@@ -59,8 +71,8 @@ export default function Home() {
         <Previa />
         <Recebe />
         <ComoFunciona />
-        <Depoimentos />
         <ParaQuem />
+        <Prova />
         <Oferta />
         <Garantia />
         <Faq />

@@ -3,7 +3,8 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { barraFixa, cookies, produto } from "@/content/copy";
-import { CHECKOUT_URL } from "./BotaoCompra";
+import { CHECKOUT_URL } from "@/content/site";
+import { linkCompra } from "./BotaoCompra";
 
 declare global {
   interface Window {
@@ -62,7 +63,7 @@ export function BarraFixa() {
           <span className="block font-display text-[1.4rem] font-bold">{produto.preco.replace(" ", " ")}</span>
           <span className="mt-0.5 block text-base text-tinta-suave">pagamento único</span>
         </p>
-        <a href={CHECKOUT_URL} data-compra className="botao-compra min-w-0 flex-1 px-4 py-3 text-[1.05rem]">
+        <a href={CHECKOUT_URL} {...linkCompra} data-compra className="botao-compra min-w-0 flex-1 px-4 py-3 text-[1.05rem]">
           {barraFixa.botao}
         </a>
       </div>

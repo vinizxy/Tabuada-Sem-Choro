@@ -1,12 +1,5 @@
 // Todos os textos da página. Edite aqui, não nos componentes.
-
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000").replace(/\/$/, "");
-
-export const empresa = {
-  nome: "NOME DA EMPRESA LTDA", // TODO: razão social
-  cnpj: "00.000.000/0001-00", // TODO: CNPJ
-  email: "contato@seudominio.com.br", // TODO: e-mail de contato
-};
+import { CONTACT_EMAIL } from "./site";
 
 export const produto = {
   nome: "Tabuada Sem Choro",
@@ -116,9 +109,9 @@ export const paraQuem = {
 
 export const oferta = {
   preco: "R$ 19,90",
-  linha: "Pagamento único. Menos que um lanche.",
-  comparacao:
-    "Uma única aula de reforço costuma custar mais que o material inteiro. E o plano fica com você para repetir quantas vezes precisar.",
+  linha: "Pagamento único.",
+  comparacao: "Um investimento pequeno para a rotina de estudos. O plano fica com você para repetir quantas vezes precisar.",
+  extras: "Na próxima etapa você poderá adicionar extras opcionais (jogos e kit de motivação).", // fácil de remover
   itens: ["Plano de 4 semanas", "Jogos", "Desafios", "Bônus medalhas e certificado"],
   botao: "Quero a Tabuada Sem Choro agora",
   micro: "Acesso imediato por e-mail · Pix ou cartão",
@@ -129,8 +122,24 @@ export const garantia = {
   linha2: "Se não gostar, devolvemos o valor.",
 };
 
-// Só aparece na página quando tiver itens. Use apenas depoimentos reais, com permissão de quem escreveu.
-export const depoimentos: { nome: string; detalhe: string; texto: string }[] = [];
+export const prova = {
+  titulo: "O que as famílias estão dizendo",
+  prints: "Conversas compartilhadas com autorização",
+  confianca: {
+    titulo: "Compra com tranquilidade",
+    itens: [
+      "Garantia de 7 dias: se não gostar, devolvemos o valor.",
+      "Pagamento seguro pela Hotmart, com Pix e cartão.",
+      "Acesso imediato por e-mail, logo após a confirmação.",
+    ],
+  },
+  porQueCriei: {
+    titulo: "Por que criei o Tabuada Sem Choro",
+    // TODO: edite com a sua história real. Não inclua alegações que você não possa comprovar.
+    texto:
+      "Eu percebi que muitas crianças travam na tabuada porque só decoram, sem entender de onde ela vem. Montei este plano curto, com fichas e jogos, para tornar esse momento mais leve para as famílias.",
+  },
+};
 
 export const faq = {
   titulo: "Perguntas frequentes",
@@ -142,11 +151,11 @@ export const faq = {
     { p: "Quanto tempo por dia?", r: "Cerca de 10 minutos." },
     {
       p: "Meu filho tem dificuldade. Funciona?",
-      r: "O plano começa do zero e vai devagar. Cada criança tem o seu ritmo, e você pode repetir qualquer semana.",
+      r: "O plano começa do zero e vai devagar. Na semana 1 a criança entende o que é multiplicar, e na semana 4 revisa as tabuadas com mais segurança. Cada criança tem o seu ritmo, não prometemos prazo nem resultado garantido, e você pode repetir qualquer semana.",
     },
-    { p: "Como recebo?", r: "Por e-mail, logo depois da confirmação do pagamento." },
+    { p: "Como recebo?", r: `Por e-mail, logo depois da confirmação do pagamento. Não chegou? Confira o spam ou escreva para ${CONTACT_EMAIL}.` },
     { p: "Posso usar com mais de um filho?", r: "Sim, dentro da sua família." },
-    { p: "E se eu não gostar?", r: "Você tem 7 dias de garantia." },
+    { p: "E se eu não gostar?", r: `Você tem 7 dias de garantia. Peça o reembolso pela Hotmart ou por e-mail: ${CONTACT_EMAIL}.` },
   ],
 };
 
@@ -160,6 +169,7 @@ export const barraFixa = {
 };
 
 export const rodape = {
+  copy: (ano: number) => `© ${ano} Tabuada Sem Choro. Todos os direitos reservados.`,
   aviso: "Este site não é afiliado ao Facebook, Instagram nem à Meta.",
   privacidade: "Política de Privacidade",
   termos: "Termos de Uso",

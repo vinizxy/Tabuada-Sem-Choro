@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { empresa } from "@/content/copy";
+import { CONTACT_EMAIL } from "@/content/site";
 import { PaginaLegal } from "@/components/PaginaLegal";
 
 export const metadata: Metadata = {
@@ -12,8 +12,7 @@ export default function Termos() {
   return (
     <PaginaLegal titulo="Termos de Uso" atualizado="16/10/2026">
       <p>
-        Estes termos regem o uso deste site e a compra do ebook Tabuada Sem Choro, oferecido por {empresa.nome}, CNPJ{" "}
-        {empresa.cnpj}. Ao comprar, você concorda com eles.
+        Estes termos regem o uso deste site e a compra do ebook Tabuada Sem Choro, oferecido pela Tabuada Sem Choro. Ao comprar, você concorda com eles.
       </p>
 
       <h2>1. O produto</h2>
@@ -25,15 +24,15 @@ export default function Termos() {
 
       <h2>2. Compra e entrega</h2>
       <p>
-        O pagamento é feito em plataforma de checkout de terceiros, por Pix ou cartão, em pagamento único. O acesso é
+        O pagamento é feito pela Hotmart, por Pix ou cartão, em pagamento único. O acesso é
         enviado para o e-mail informado logo depois da confirmação do pagamento. Confira a caixa de spam. Se não receber,
-        escreva para <a className="underline" href={`mailto:${empresa.email}`}>{empresa.email}</a>.
+        escreva para <a className="underline" href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
       </p>
 
       <h2>3. Garantia e reembolso</h2>
       <p>
         Você tem 7 dias corridos a partir da compra para pedir o reembolso integral, sem precisar justificar, conforme o
-        art. 49 do Código de Defesa do Consumidor. O pedido pode ser feito pela plataforma de checkout ou pelo nosso e-mail.
+        art. 49 do Código de Defesa do Consumidor. O pedido pode ser feito pela Hotmart ou pelo nosso e-mail.
       </p>
 
       <h2>4. Licença de uso</h2>
