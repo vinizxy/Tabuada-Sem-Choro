@@ -1,7 +1,7 @@
 import Script from "next/script";
 import { produto } from "@/content/copy";
 
-const PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
+const PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID || "1096856816548017";
 
 // Carrega depois da hidratação (afterInteractive). PageView + ViewContent ao carregar.
 // InitiateCheckout é disparado no clique (components/Cliente.tsx). Purchase fica com o checkout.
