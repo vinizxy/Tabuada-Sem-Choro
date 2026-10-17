@@ -86,9 +86,9 @@ body {
 /* Sombra sólida, sem blur. Cards: raio 20px. Botões: pílula. */
 .cartao {
   background: #fffdf8;
-  border: 2.5px solid var(--tinta);
-  border-radius: 20px;
-  box-shadow: 5px 5px 0 var(--tinta);
+  border: 2px solid var(--tinta);
+  border-radius: 16px;
+  box-shadow: 0 14px 30px -18px rgb(31 42 68 / 0.45);
 }
 
 .botao-compra {
@@ -108,7 +108,7 @@ body {
   line-height: 1.2;
   text-align: center;
   text-decoration: none;
-  box-shadow: 4px 4px 0 var(--tinta);
+  box-shadow: 0 4px 0 var(--tinta);
   transition:
     transform 0.15s ease,
     box-shadow 0.15s ease;
@@ -122,12 +122,12 @@ body {
   }
 }
 .botao-compra:hover {
-  transform: translate(-1px, -1px);
-  box-shadow: 6px 6px 0 var(--tinta);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 var(--tinta);
 }
 .botao-compra:active {
-  transform: translate(3px, 3px);
-  box-shadow: 1px 1px 0 var(--tinta);
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 var(--tinta);
 }
 
 /* Adesivo: número grande levemente girado */

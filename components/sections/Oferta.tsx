@@ -6,7 +6,7 @@ import { Sublinhado, Visto } from "../Rabiscos";
 
 export function Oferta() {
   return (
-    <section id="oferta" data-esconde-barra aria-labelledby="titulo-oferta" className="scroll-mt-10 border-y-2 border-tinta bg-amarelo-claro">
+    <section id="oferta" data-esconde-barra aria-labelledby="titulo-oferta" className="scroll-mt-10 bg-amarelo-claro/45">
       <div className="mx-auto max-w-xl px-4 py-16 md:py-24">
         <div className="cartao relative p-6 text-center md:p-10">
           <Image

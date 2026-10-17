@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { previa } from "@/content/copy";
 
-const giros = ["-rotate-2", "rotate-1", "-rotate-1", "rotate-2"];
+const giros = ["", "", "", ""];
 
 export function Previa() {
   return (

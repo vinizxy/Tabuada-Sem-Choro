@@ -30,8 +30,8 @@ export const garantias = ["Acesso imediato", "Pronto para imprimir", "10 minutos
 export const hero = {
   selo: "Para crianças de 7 a 10 anos",
   titulo: "Tabuada sem choro.",
-  rabisco: "Sem briga. Sem decoreba.",
-  sub: "Plano de 4 semanas. 10 minutos por dia. Muitos jogos.",
+  rabisco: "10 minutos por dia, sem decoreba.",
+  sub: "Plano de 4 semanas em PDF, com fichas e jogos para imprimir. Seu filho aprende a tabuada entendendo de onde ela vem.",
   botao: "Quero a Tabuada Sem Choro — R$ 19,90",
   micro: "Pagamento único · Acesso imediato · Garantia de 7 dias",
   imagemAlt: "Criança sorrindo sentada à mesa com uma folha de tabuada impressa",
@@ -49,9 +49,8 @@ export const dor = {
 };
 
 export const virada = {
-  linha1: "O problema não é o seu filho.",
-  linha2: "É decorar sem entender.",
-  botao: "Quero tentar do jeito leve",
+  texto:
+    "Na maioria das vezes a criança trava porque decorou a tabuada sem saber de onde ela vem. Quando ela entende o que é multiplicar, a decoreba deixa de ser tão pesada.",
 };
 
 export const metodo = {
@@ -126,24 +125,12 @@ export const oferta = {
 };
 
 export const garantia = {
-  linha1: "7 dias para testar.",
-  linha2: "Não gostou? Devolvemos seu dinheiro.",
+  linha1: "Garantia de 7 dias.",
+  linha2: "Se não gostar, devolvemos o valor.",
 };
 
-export const escolhas = {
-  titulo: "Agora você tem duas escolhas.",
-  um: {
-    rotulo: "Escolha 1",
-    titulo: "Continuar como está",
-    texto: "Mais repetição, mais cobrança e o 7 × 8 travando de novo.",
-  },
-  dois: {
-    rotulo: "Escolha 2",
-    titulo: "Começar com 10 minutos por dia",
-    texto: "Um plano pronto para a criança entender, praticar e ganhar confiança.",
-  },
-  botao: "Quero começar agora",
-};
+// Só aparece na página quando tiver itens. Use apenas depoimentos reais, com permissão de quem escreveu.
+export const depoimentos: { nome: string; detalhe: string; texto: string }[] = [];
 
 export const faq = {
   titulo: "Perguntas frequentes",

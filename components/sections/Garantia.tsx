@@ -6,7 +6,7 @@ export function Garantia() {
       <div className="mx-auto flex max-w-4xl flex-col items-center gap-8 px-4 py-16 text-center sm:flex-row sm:text-left md:py-20">
         <div
           aria-hidden="true"
-          className="grid h-36 w-36 shrink-0 -rotate-12 place-items-center rounded-full border-[3px] border-dashed border-tinta bg-verde-claro font-display leading-none font-bold shadow-[4px_4px_0_var(--tinta)]"
+          className="grid h-36 w-36 shrink-0 -rotate-12 place-items-center rounded-full border-[3px] border-dashed border-tinta bg-verde-claro font-display leading-none font-bold"
         >
           <span>
             <span className="block text-[3.2rem]">7</span>

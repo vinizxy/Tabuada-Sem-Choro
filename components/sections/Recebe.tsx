@@ -1,42 +1,36 @@
 import Image from "next/image";
 import { recebe } from "@/content/copy";
 import { BotaoCompra } from "../BotaoCompra";
-import { Visto } from "../Rabiscos";
 
 export function Recebe() {
   return (
-    <section aria-labelledby="titulo-recebe" className="border-y-2 border-tinta bg-verde-claro">
-      <div className="mx-auto max-w-6xl px-4 py-16 md:px-8 md:py-24">
+    <section aria-labelledby="titulo-recebe" className="bg-amarelo-claro/45">
+      <div className="mx-auto max-w-4xl px-4 py-16 md:py-24">
         <h2 id="titulo-recebe" className="titulo-lg">
           {recebe.titulo}
         </h2>
-        <ul className="mt-10 grid gap-4 sm:grid-cols-2">
+        <ul className="mt-8 divide-y-2 divide-tinta/15">
           {recebe.itens.map((item) => (
-            <li key={item.titulo} className="surge flex items-start gap-4 rounded-[20px] border-2 border-tinta bg-[#fffdf8] p-4 md:p-5">
-              <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full border-2 border-tinta bg-verde">
-                <Visto className="h-6 w-6 text-tinta" />
-              </span>
-              <div>
-                <h3 className="text-[1.2rem] leading-snug font-bold">{item.titulo}</h3>
-                <p className="mt-1 text-tinta-suave">{item.texto}</p>
-              </div>
+            <li key={item.titulo} className="py-5">
+              <h3 className="text-[1.25rem] leading-snug font-bold">{item.titulo}</h3>
+              <p className="mt-1 text-tinta-suave">{item.texto}</p>
             </li>
           ))}
         </ul>
 
-        <div className="surge cartao mt-10 grid items-center gap-6 bg-amarelo-claro p-5 sm:grid-cols-[160px_1fr] md:p-6">
+        <div className="cartao mt-8 grid items-center gap-5 p-5 sm:grid-cols-[150px_1fr]">
           <Image
             src="/img/medalha-certificado.webp"
             alt={recebe.bonusAlt}
             width={600}
             height={600}
-            sizes="160px"
-            className="mx-auto h-auto w-40 rotate-[-4deg] rounded-[16px] border-2 border-tinta"
+            sizes="150px"
+            className="mx-auto h-auto w-36 rounded-[12px]"
           />
           <p className="titulo-md text-center sm:text-left">{recebe.bonus}</p>
         </div>
 
-        <div className="mt-10 text-center">
+        <div className="mt-10">
           <BotaoCompra>{recebe.botao}</BotaoCompra>
         </div>
       </div>

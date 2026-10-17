@@ -3,7 +3,7 @@ import { Visto, Xis } from "../Rabiscos";
 
 export function ParaQuem() {
   return (
-    <section aria-labelledby="titulo-paraquem" className="border-t-2 border-tinta bg-coral-claro">
+    <section aria-labelledby="titulo-paraquem" className="bg-amarelo-claro/45">
       <div className="mx-auto max-w-6xl px-4 py-16 md:px-8 md:py-24">
         <h2 id="titulo-paraquem" className="titulo-lg">
           {paraQuem.titulo}

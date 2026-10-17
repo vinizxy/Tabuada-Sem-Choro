@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { comoFunciona } from "@/content/copy";
 
-const cores = ["bg-amarelo", "bg-coral", "bg-verde"];
+const cores = ["bg-amarelo", "bg-amarelo", "bg-amarelo"];
 
 export function ComoFunciona() {
   return (
@@ -14,7 +14,7 @@ export function ComoFunciona() {
           <ol className="mt-8 space-y-5">
             {comoFunciona.passos.map((passo, i) => (
               <li key={passo} className="surge flex items-center gap-5">
-                <span aria-hidden="true" className={`adesivo h-14 w-14 shrink-0 text-[1.8rem] ${cores[i]} ${i % 2 ? "rotate-6" : "-rotate-6"}`}>
+                <span aria-hidden="true" className={`adesivo h-14 w-14 shrink-0 text-[1.8rem] ${cores[i]}`}>
                   {i + 1}
                 </span>
                 <span className="font-display text-[clamp(1.6rem,5vw,2.2rem)] font-semibold">
@@ -25,7 +25,7 @@ export function ComoFunciona() {
             ))}
           </ol>
         </div>
-        <div className="surge cartao rotate-1 overflow-hidden p-2.5">
+        <div className="surge cartao overflow-hidden p-2">
           <Image
             src="/img/maos-jogando.webp"
             alt={comoFunciona.imagemAlt}

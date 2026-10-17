@@ -3,14 +3,13 @@ import { BarraFixa, RastreioCompra } from "@/components/Cliente";
 import { Rodape } from "@/components/Rodape";
 import { Hero } from "@/components/sections/Hero";
 import { Dor } from "@/components/sections/Dor";
-import { Virada } from "@/components/sections/Virada";
 import { Metodo } from "@/components/sections/Metodo";
 import { Previa } from "@/components/sections/Previa";
 import { Recebe } from "@/components/sections/Recebe";
 import { ComoFunciona } from "@/components/sections/ComoFunciona";
 import { ParaQuem } from "@/components/sections/ParaQuem";
 import { Oferta } from "@/components/sections/Oferta";
-import { Escolhas } from "@/components/sections/Escolhas";
+import { Depoimentos } from "@/components/sections/Depoimentos";
 import { Garantia } from "@/components/sections/Garantia";
 import { Faq } from "@/components/sections/Faq";
 import { CtaFinal } from "@/components/sections/CtaFinal";
@@ -56,15 +55,14 @@ export default function Home() {
       <main>
         <Hero />
         <Dor />
-        <Virada />
         <Metodo />
         <Previa />
         <Recebe />
         <ComoFunciona />
+        <Depoimentos />
         <ParaQuem />
         <Oferta />
         <Garantia />
-        <Escolhas />
         <Faq />
         <CtaFinal />
       </main>
